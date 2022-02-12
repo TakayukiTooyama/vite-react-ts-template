@@ -2,9 +2,9 @@ import { Link } from 'react-location'
 
 import { useHoge } from './hook'
 
-import logo from '~/assets/logo.svg'
-import { Button } from '~/components/button'
-import { PATH } from '~/router/path'
+import logo from '@/assets/logo.svg'
+import { Button } from '@/components/button'
+import { PATH } from '@/router/path'
 
 export const HogePage: React.VFC = () => {
   const { count, subCount } = useHoge()
