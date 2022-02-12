@@ -5,10 +5,11 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "fix": "npm-run-all -p fix:*",
+    "eslint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "prettier": "prettier --check .",
     "fix:eslint": "eslint . --ext .js,.ts,.jsx,.tsx --fix",
     "fix:prettier": "prettier --write .",
-    "eslint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "fix": "npm-run-all -p fix:*",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
